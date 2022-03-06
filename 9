@@ -1,0 +1,13 @@
+import java.util.Scanner;
+    class HelloWorld {
+        public static void main(String[] args) {
+            
+            Scanner input_temp = new Scanner(System.in);
+
+            System.out.print("Input temperature in C°: ");
+            float celsius = input_temp.nextFloat();
+
+            float fahrenheit = ((celsius * 9 / 5) + 32);
+            System.out.println(celsius + "C° are " + fahrenheit + "F° In Fahrenheit");
+        }
+    }
