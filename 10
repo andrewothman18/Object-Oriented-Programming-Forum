@@ -1,0 +1,33 @@
+import java.lang.Math;
+import java.util.Scanner;
+class Main {
+
+    public class no_10 {
+        public static void main(String[] args) {
+            double mean;
+            double variance;
+            double standardDeviation;
+
+            Scanner num1 = new Scanner(System.in);
+            Scanner num2 = new Scanner(System.in);
+            Scanner num3 = new Scanner(System.in);
+
+            System.out.print("First Number: ");
+            double x = num1.nextDouble();
+
+            System.out.print("Second Number: ");
+            double y = num1.nextDouble();
+
+            System.out.print("Third Number: ");
+            double z = num1.nextDouble();
+
+            mean = (x + y + z) / 3;
+            variance = (Math.pow((x - mean), 2) + Math.pow((y - mean), 2) + Math.pow((z - mean), 2)) / 3;
+            standardDeviation = Math.sqrt(variance);
+            
+            System.out.println("mean: " + mean);
+            System.out.println("variance: " + variance);
+            System.out.println("standard deviation: " + standardDeviation);
+        }
+    }
+}
