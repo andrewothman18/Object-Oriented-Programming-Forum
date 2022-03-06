@@ -1,0 +1,12 @@
+public class no_10 {
+         public static void main(String[] args) {
+            int x, y, Null;
+            x = 5;
+            y = 10;
+            System.out.println("before:" + "\n" + "x= " + x + "\n" + "y= " + y);
+            Null = x;
+            x = y;
+            y = Null;
+            System.out.println("\n" + "after:" + "\n" + "x= " + x + "\n" + "y= " + y);
+        }
+    }
